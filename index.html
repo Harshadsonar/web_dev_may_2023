@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to Frontend Module 1</h1>
+    <!-- defines the action which is going to be performed on form  submission.
+    You add a file path in this action, this file contains the server-side(backend) 
+    code which handles your form data. -->
+    <form action="file_path.js">
+        <div>
+            <label for="name">Name</label> <br>
+            <input type="text" name="name" value="Suman" placeholder="enter your name">
+        </div>
+        <div>
+            <label for="Age">Age</label> <br>
+            <input type="number" value="45" name="age">
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" value="sonarharshad02@gmail.com" name="email">
+        </div>
+        <label for="password">Create Password</label><br>
+        <input type="password">
+        </div>
+        <div>
+            <label for="phone no">Contact Number</label><br>
+            <input type="tel">
+        </div>
+        <div>
+            <label for="gender">Gender:</label><br>
+            <input type="radio">Male <br>
+            <input type="radio">Female <br>
+        </div>
+        <div>
+            <label for="skills">Your Skills:</label> HTML: <input type="checkbox"> CSS: <input type="checkbox"> JS: <input type="checkbox">
+        </div>
+        <div>
+            <label for="time">Preferred time for Meetup:</label>
+            <input type="datetime-local">
+        </div>
+        <div>
+            <label for="topics">Choose topic for the meetup:</label>
+            <select name="topics">
+                <option value="HTML-Tags">HTML Tags</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="msg">Any Questions ?</label>
+            <textarea name="msg" id="msg" cols="30" rows="1"></textarea>
+        </div>
+
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+
+        <div>
+            <label for="extra-input">Extra Input Pages</label>
+            <input type="color"> <br>
+            <input type="date"> <br>
+            <input type="month"> <br>
+            <input type="week"> <br>
+            <input type="file"> <br>
+            <input type="image" src="../beagle/beagle.jpeg" width="100px"> <br>
+            <label for="url">Paste URL</label> <br>
+            <input type="url"> <br>
+            <input type="range"> <br>
+            <input type="hidden"> <br>
+            <input type="button">
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
