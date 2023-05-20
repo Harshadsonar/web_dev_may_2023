@@ -1,0 +1,83 @@
+/* Sticky navigation bar styles */
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #333;
+    color: #fff;
+}
+
+.sticky ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px 0 10px;
+    overflow: hidden;
+}
+
+.sticky li {
+    float: left;
+}
+
+.sticky li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.sticky li a:hover {
+    background-color: #111;
+}
+
+
+/* Nested table styles */
+
+table {
+    width: 80%;
+}
+
+table th,
+table td {
+    width: auto;
+    /* or specify a specific width value in pixels or percentage */
+    /* Add any additional styling as needed */
+}
+
+.nested-table {
+    width: 100%;
+}
+
+.nested-table td {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+}
+
+
+/* Other styles */
+
+h2 {
+    margin-top: 40px;
+}
+
+form label,
+form input,
+form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+form button {
+    background-color: #111;
+    color: white;
+}
+
+.background {
+    background-clip: #ccc;
+    /* Replace 'background-image.jpg' with the actual path to your background image */
+    background-repeat: no-repeat;
+}
