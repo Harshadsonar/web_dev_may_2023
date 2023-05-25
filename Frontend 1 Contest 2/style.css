@@ -1,83 +1,122 @@
-/* Sticky navigation bar styles */
-
-.sticky {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    background-color: #333;
-    color: #fff;
-}
-
-.sticky ul {
-    list-style-type: none;
+* {
     margin: 0;
-    padding: 0 10px 0 10px;
-    overflow: hidden;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.sticky li {
-    float: left;
+html {
+    scroll-behavior: smooth;
 }
 
-.sticky li a {
-    display: block;
+.navbar {
     color: #fff;
-    text-align: center;
-    padding: 12px 16px;
+    background-color: #000;
+    font-size: 12px;
+    position: sticky;
+    top: 0px;
+    height: 50px;
+}
+
+.title p {
+    float: left;
+    margin: 15px 20px;
+}
+
+.nav-items {
+    float: right;
+    margin: 15px 20px;
+}
+
+.nav-items a {
     text-decoration: none;
+    color: #fff;
+    padding: 0px 10px;
 }
 
-.sticky li a:hover {
-    background-color: #111;
+.container {
+    background-color: #ddd;
+    padding: 30px;
 }
 
-
-/* Nested table styles */
-
-table {
-    width: 80%;
+.books-table,
+.registration-form {
+    background-color: #fff;
+    margin: 30px 20%;
+    padding: 30px;
+    border-radius: 5px;
 }
 
-table th,
-table td {
-    width: auto;
-    /* or specify a specific width value in pixels or percentage */
-    /* Add any additional styling as needed */
+.books-table:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
 }
 
-.nested-table {
+.books-table h1 {
+    padding: 10px 0px;
+}
+
+.books-table table {
     width: 100%;
 }
 
-.nested-table td {
-    padding: 4px 8px;
-    border: 1px solid #ccc;
+.books-table th.col {
+    text-align: left;
 }
 
-
-/* Other styles */
-
-h2 {
-    margin-top: 40px;
+.books-table table,
+tr,
+td,
+th {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 5px 10px;
 }
 
-form label,
-form input,
-form button {
-    display: block;
-    margin-bottom: 10px;
-    width: 70%;
+.ns-table {
+    margin: 10px 0px;
 }
 
-form button {
-    background-color: #111;
-    color: white;
+.registration-form .form-control {
+    margin: 10px 0px;
 }
 
-.background {
-    background-clip: #ccc;
-    /* Replace 'background-image.jpg' with the actual path to your background image */
-    background-repeat: no-repeat;
+.form-control label {
+    font-size: 15px;
+}
+
+.form-control input {
+    width: 100%;
+    height: 25px;
+    border: 1px solid #ddd;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.submit-button {
+    background-color: #000;
+    color: #fff;
+    height: 35px!important;
+    width: 102% !important;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.form-control input:focus {
+    background-color: rgb(225, 232, 252);
+}
+
+.top-btn img {
+    background-color: #ddd;
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+    rotate: 270deg;
+    position: fixed;
+    bottom: 5px;
+    right: -20px;
 }
